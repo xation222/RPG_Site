@@ -21,34 +21,38 @@
 }
 
 body {
-    background-color: #3B3023;
+    background-image: url(../imagens/fundo\ universo.jpg);
 }
 header {
-    background-color: #7058376c;
+    color: rgb(154, 220, 241);
+    background-color: #63377034;
     border-radius: 20px;
     padding: 0px 2px 1px 2px;
 }
 header:hover {
-    background-color: #e9dbc87d;
+    background-color: #e6c8e92f;
+    color: rgb(0, 195, 255);
 }
 main {
+    color: rgb(132, 192, 244);
     text-align: justify;
-    background-color: #8a7b66;
+    background-color: #63377034;
     border-radius: 20px;
     padding: 0px 2px 1px 2px;
 }
 main:hover {
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     background-color: #000000;
 }
 footer {
     font-family: Lboy;
-    background-color: #7058376c;
+    color: rgb(0, 0, 0);
+    background-color: #63377034;
     border-radius: 20px;
     padding: 0px 2px 1px 2px;
 }
 footer:hover {
-    background-color: #e9dbc87d;
+    background-color: #e6c8e970;
 }
 footer > p {
     display: none;
