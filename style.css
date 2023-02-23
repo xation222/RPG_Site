@@ -1,2 +1,66 @@
 @charset "UTF-8";
+@font-face {
+    font-family: mine;
+    src: url(fonts/MINECRAFT\ PE.ttf);
+}
+@font-face {
+    font-family: terror;
+    src: url(fonts/Melted\ Monster.ttf);
+}
+@font-face {
+    font-family: Lboy;
+    src: url(fonts/SuperLegendBoy-4w8Y.ttf);
+}
+@font-face {
+    font-family: sansbold;
+    src: url(fonts/PixeloidSansBold-GOjpP.ttf);
+}
+@font-face {
+    font-family: edo;
+    src: url(fonts/edosz.ttf);
+}
 
+body {
+    background-color: #3B3023;
+}
+header {
+    background-color: #7058376c;
+    border-radius: 20px;
+    padding: 0px 2px 1px 2px;
+}
+main {
+    text-align: justify;
+    background-color: #8a7b66;
+    border-radius: 20px;
+    padding: 0px 2px 1px 2px;
+}
+footer {
+    font-family: Lboy;
+    background-color: #7058376c;
+    border-radius: 20px;
+    padding: 0px 2px 1px 2px;
+}
+
+h1#principal {
+    font-family: mine;
+}
+h1 {
+    text-indent: 20px;
+    padding-top: 4px;
+    margin-bottom: 4px;
+}
+h2 {
+    text-indent: 20px;
+}
+nav {
+    font-family: Lboy;
+    text-indent: 20px;
+}
+p {
+    font-family: sans-serif, 'Times New Roman', Times, serif;
+    margin-top: 1px;
+    color: #1a0f00;
+    text-indent: 20px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
