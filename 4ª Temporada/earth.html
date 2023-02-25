@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse do cao</title>
+    <style>
+        div {
+            border-radius: 100%;
+            background-color: aquamarine;
+            border: 2px solid black;
+            height: 30px;
+            width: 30px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div id="circle"></div>
+    <script>
+        document.addEventListener('mousemove', function(e) {
+            let body = document.querySelector('body');
+            let circle = document.getElementById('circle');
+            let left = e.offsetX;
+            let top = e.offsetY;
+            circle.style.left = left + 'px';
+            circle.style.top = top + 'px';
+        })
+    </script>
+    <script>
+        document.body.style.cursor = 'none';
+    </script>
+</body>
+</html>

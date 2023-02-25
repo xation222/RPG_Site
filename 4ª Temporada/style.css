@@ -20,8 +20,10 @@
     src: url(../edosz.ttf);
 }
 
+
 body {
-    background-image: url(../imagens/fundo\ universo.jpg);
+    /*background-image: url(../imagens/fundo\ universo.jpg);*/
+    background-color: #1a0f00;
 }
 header {
     color: rgb(154, 220, 241);
@@ -39,11 +41,13 @@ main {
     background-color: #63377034;
     border-radius: 20px;
     padding: 0px 2px 1px 2px;
+    text-align: center;
+    border: 2px solid rgb(0, 255, 21);
 }
-main:hover {
+/*main:hover {
     color: rgb(255, 255, 255);
     background-color: #000000;
-}
+}*/
 footer {
     font-family: Lboy;
     color: rgb(0, 0, 0);
@@ -87,9 +91,21 @@ p {
     padding-left: 4px;
     padding-right: 4px;
 }
-main {
-    text-align: center;
+section {
+    background-image: url(../imagens/universo\ limpo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border: 2px solid red;
+    width: 10%;
+    height: 10%;
+    
 }
-picture > img {
-    max-width: 90%;
+article {
+    border: 2px solid rgb(229, 255, 0);
+    height: 4%;
+    width: 3%;
+    position: relative;
+    top: 18%;
+    left: 21%;
 }
