@@ -19,7 +19,6 @@
     font-family: edo;
     src: url(fonts/edosz.ttf);
 }
-
 body {
     background-color: #3B3023;
 }
@@ -55,11 +54,11 @@ footer > p {
 footer:hover > p {
     display: block;
 }
-
 h1#principal {
     font-family: mine;
 }
 h1 {
+    font-size: 1.6em;
     text-indent: 20px;
     padding-top: 4px;
     margin-bottom: 4px;
@@ -81,4 +80,38 @@ p {
     text-indent: 20px;
     padding-left: 4px;
     padding-right: 4px;
+}
+menu ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+menu li:hover {
+    background-color: #3B3023;
+}
+a {
+    display: block;
+    text-decoration: none;
+    color: rgba(255, 205, 166, 0.908);
+    margin: 3px;
+    padding: 3px;
+}
+i {
+    display: block;
+    text-align: center;
+}
+i:hover {
+    color: white;
+    background-color: gray;
+}
+menu {
+    padding: 0px;
+    display: none;
+    background-color: #8a7b6677;
+    border-radius: 7%;
+    margin-top: 2px;
+}
+nav {
+    display: none;
 }
