@@ -1,0 +1,155 @@
+<style>
+
+</style>
+<script>
+    switch(diaSem) {
+    case 0:
+        console.log('Hoje é Domingo')
+        break
+    case 1:
+        console.log('Hoje é Segunda-Feira')
+        break
+    case 2:
+        console.log('Hoje é Terça-Feira')
+        break
+    case 3:
+        console.log('Hoje é Quarta-Feira')
+        break
+    case 4:
+        console.log('Hoje é Quinta-Feira')
+        break
+    case 5:
+        console.log('Hoje é Sexta-Feira')
+        break
+    case 6:
+        console.log('Hoje é Sábado')
+        break
+    default:
+        console.log('[Erro] Dia Inválido')
+        break // este é o único break que não é obrigatório
+
+        var qualAbrir = 0
+    //obj9
+    else if (((pontos_ob9[0].x <= pontos_ob1[1].x) 
+    && (pontos_ob1[0].x <= pontos_ob9[1].x) 
+    && (pontos_ob9[0].y <= pontos_ob1[2].y) 
+    && (pontos_ob1[0].y <= pontos_ob9[2].y))) 
+    {
+        qualAbrir = 1;
+    }
+    else if (((pontos_ob9t[0].x <= pontos_ob1[1].x) 
+    && (pontos_ob1[0].x <= pontos_ob9t[1].x) 
+    && (pontos_ob9t[0].y <= pontos_ob1[2].y) 
+    && (pontos_ob1[0].y <= pontos_ob9t[2].y))) 
+    {
+        qualAbrir = 2;
+    }
+    //obj10
+    else if (((pontos_ob10[0].x <= pontos_ob1[1].x) 
+    && (pontos_ob1[0].x <= pontos_ob10[1].x) 
+    && (pontos_ob10[0].y <= pontos_ob1[2].y) 
+    && (pontos_ob1[0].y <= pontos_ob10[2].y))) 
+    {   
+        qualAbrir = 3;
+    }
+    else if (((pontos_ob10t[0].x <= pontos_ob1[1].x) 
+    && (pontos_ob1[0].x <= pontos_ob10t[1].x) 
+    && (pontos_ob10t[0].y <= pontos_ob1[2].y) 
+    && (pontos_ob1[0].y <= pontos_ob10t[2].y)))
+    {
+        qualAbrir = 4;
+    }
+
+    switch(qualAbrir) {
+        case 1:
+            objeto9texto.style.display = 'block';
+            objeto9texto.style.left = pontos_ob9[1].x;
+            objeto9texto.style.top = pontos_ob9[2].y - this.getElementById('p9t').offsetHeight;
+            objeto1.style.opacity = '100%';
+            break
+        case 2:
+            objeto9texto.style.display = 'block';
+            objeto1.style.opacity = '100%';
+            document.body.style.cursor = 'auto';
+            circle.style.left = pontos_ob9[0].x - 28;
+            circle.style.top = pontos_ob9[0].y - 28;
+            break
+        case 3:
+            objeto10texto.style.display = 'block';
+            objeto10texto.style.left = pontos_ob10[1].x;
+            objeto10texto.style.top = pontos_ob10[2].y - this.getElementById('p10t').offsetHeight;
+            objeto1.style.opacity = '100%';
+            break
+        case 4:
+            objeto10texto.style.display = 'block';
+            objeto1.style.opacity = '100%';
+            document.body.style.cursor = 'none';
+            circle.style.left = pontos_ob10[0].x - 8;
+            circle.style.top = pontos_ob10[0].y - 8;
+            break
+        default:
+            objeto10texto.style.display = 'none';
+            objeto9texto.style.display = 'none';
+            break
+    }
+
+
+
+
+
+    /* else if (((pontos_ob9[0].x <= pontos_ob1[1].x) 
+    && (pontos_ob1[0].x <= pontos_ob9[1].x) 
+    && (pontos_ob9[0].y <= pontos_ob1[2].y) 
+    && (pontos_ob1[0].y <= pontos_ob9[2].y))) 
+    {
+        objeto9texto.style.display = 'block';
+        objeto9texto.style.left = pontos_ob9[1].x;
+        objeto9texto.style.top = pontos_ob9[2].y - this.getElementById('p9t').offsetHeight;
+        objeto1.style.opacity = '100%';
+    }
+    else if (((pontos_ob9t[0].x <= pontos_ob1[1].x) 
+    && (pontos_ob1[0].x <= pontos_ob9t[1].x) 
+    && (pontos_ob9t[0].y <= pontos_ob1[2].y) 
+    && (pontos_ob1[0].y <= pontos_ob9t[2].y))) 
+    {
+        objeto9texto.style.display = 'block';
+        objeto1.style.opacity = '100%';
+        document.body.style.cursor = 'auto';
+        circle.style.left = pontos_ob9[0].x - 28;
+        circle.style.top = pontos_ob9[0].y - 28;
+    }
+    //obj10
+    
+    else if (((pontos_ob10[0].x <= pontos_ob1[1].x) 
+    && (pontos_ob1[0].x <= pontos_ob10[1].x) 
+    && (pontos_ob10[0].y <= pontos_ob1[2].y) 
+    && (pontos_ob1[0].y <= pontos_ob10[2].y))) 
+    {   
+        objeto10texto.style.display = 'block';
+        objeto10texto.style.left = pontos_ob10[1].x;
+        objeto10texto.style.top = pontos_ob10[2].y - this.getElementById('p10t').offsetHeight;
+        objeto1.style.opacity = '100%';
+    }
+    else if (((pontos_ob10t[0].x <= pontos_ob1[1].x) 
+    && (pontos_ob1[0].x <= pontos_ob10t[1].x) 
+    && (pontos_ob10t[0].y <= pontos_ob1[2].y) 
+    && (pontos_ob1[0].y <= pontos_ob10t[2].y)))
+    {
+        objeto10texto.style.display = 'block';
+        objeto1.style.opacity = '100%';
+        document.body.style.cursor = 'none';
+        circle.style.left = pontos_ob10[0].x - 8;
+        circle.style.top = pontos_ob10[0].y - 8;
+    }
+*/
+
+}
+    
+    
+    
+    
+    
+    
+
+    
+</script>
