@@ -1,0 +1,19 @@
+@charset "UTF-8";
+@media screen and (min-width: 768px) {
+    article {
+        height: 250px;
+        margin: 8px;
+        border-radius: 10%;
+        background-color: rgba(0, 255, 255, 0.335);
+        box-shadow: 1px 1px 1px black;
+    }
+    .wrapper {
+        text-align: center;
+        width: 99%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    footer {
+        border-radius: 0;
+    }
+}
