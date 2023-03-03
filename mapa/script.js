@@ -395,7 +395,6 @@ console.log(colisao)
     var é global
     let é local(bloco)
     const é imutável
-    para de ler os meus negócios!
 */
 
 
