@@ -59,17 +59,36 @@ i:hover {
 div#menu:hover {
     background-color: rgba(181, 67, 67, 0.194);
 }
-#Temporada\ 1{
+#Temporada\ 1 h2 {
     font-family: mine;
+    font-weight: bolder;
 }
-#Temporada\ 2{
+#Temporada\ 1 {
+    color: rgba(255, 227, 227, 0.828);
+}
+#Temporada\ 2 {
+    color: rgb(42, 0, 0);
+}
+#Temporada\ 3 {
+    color: rgba(210, 143, 61, 0.761);
+}
+#Temporada\ 4 {
+    color: rgba(236, 146, 197, 0.67);
+}
+#Temporada\ 2 h2 {
     font-family: monster;
+    font-weight: bolder;
+    font-size: 32px;
 }
-#Temporada\ 3{
+#Temporada\ 3 h2 {
     font-family: lboy;
+    font-weight: bolder;
+    font-size: 21px;
 }
-#Temporada\ 4{
-    font-family: sanba;
+#Temporada\ 4 h2 {
+    font-family: edotensei;
+    font-weight: bolder;
+    font-size: 31px;
 }
 .spoiler {
     display: none;
@@ -99,6 +118,8 @@ article {
     padding-bottom: 20px;
     padding-right: 5%;
     margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
 }
 footer {
     color: rgb(114, 114, 114);
