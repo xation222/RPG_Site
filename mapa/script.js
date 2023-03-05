@@ -3,12 +3,15 @@
         //esconder cursor do mouse
     document.body.style.cursor = 'none';  
         // movimento de seguir o mouse
+    var device = false;
     document.addEventListener('mousemove', function(e) {   
-    var circle = document.getElementById('circle');
-    let left = e.pageX;
-    let top = e.pageY;
-    circle.style.left = left - 40  + 'px';
-    circle.style.top = top - 40 + 'px';
+    if (device == false) {
+        var circle = document.getElementById('circle');
+        let left = e.pageX;
+        let top = e.pageY;
+        circle.style.left = left - 40  + 'px';
+        circle.style.top = top - 40 + 'px';
+    }
         // declaração de objetos
     var ob1 = document.getElementById('circleIntern').getBoundingClientRect();
     var objeto1 = document.getElementById('circle');
@@ -381,8 +384,10 @@
         objeto1.style.opacity = '80%';
         colisao = false;
     }
+    console.log(device)
     })  
     document.addEventListener('touchstart', e => {
+        device = true;
         circle.style.left = e.changedTouches[0].clientX - 25;
         circle.style.top = e.changedTouches[0].clientY - 25;
         console.log(e.changedTouches[0].clientX)
