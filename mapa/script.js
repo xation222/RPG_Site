@@ -4,7 +4,7 @@
     document.body.style.cursor = 'none';  
         // movimento de seguir o mouse
     document.addEventListener('mousemove', function(e) {   
-    let circle = document.getElementById('circle');
+    var circle = document.getElementById('circle');
     let left = e.pageX;
     let top = e.pageY;
     circle.style.left = left - 40  + 'px';
@@ -381,22 +381,17 @@
         objeto1.style.opacity = '80%';
         colisao = false;
     }
-console.log(colisao)
-})  
-
-/* -----------------------------------------------------------------------------------
-    fora da function executa o codigo
-    dentro da functino só executa se a function é chamada
-    window.onload = function chama no inicio
-    function name() chama no momento do código
-
-    unmonitorEvents($0)
-    monitorEvents($0)
-    var é global
-    let é local(bloco)
-    const é imutável
-    para de ler os meus negócios!
-*/
+    })  
+    document.addEventListener('touchstart', e => {
+        circle.style.left = e.changedTouches[0].clientX - 25;
+        circle.style.top = e.changedTouches[0].clientY - 25;
+        console.log(e.changedTouches[0].clientX)
+    })
+    document.addEventListener('touchmove', e => {
+        circle.style.left = e.changedTouches[0].clientX - 25;
+        circle.style.top = e.changedTouches[0].clientY - 25;
+        console.log('move')
+    })
 
 
 

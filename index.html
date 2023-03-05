@@ -41,21 +41,35 @@
         <p>Rpg - O desejo é um jogo de roleplay que se passa em diferentes épocas. Cada época é adaptada para a experiências dos players com rpg. A primeira tempora tem poucas regras e poucas possíbilidades a serem escolhidas na criação de persoangens. A segunda já adiciona as classes, melhorando assim as mecânicas de combate. A terceira temporada acrescenta as raças e outras regras e curiosidades. E por último a quarta temporada adiciona o restante das regras, se tornando um rpg por inteiro.</p>
         <p>Então se você nunca se quer jogou rpg antes nem mestrou, a primeira temporada seria a mais adequada. Se você já jogou Rpg antes, talvez a terceira ou a quarta. Caso queira criar a história do começo, a primeira pode ser adaptada as suas necessidades.</p>
     </main>
-    <footer>
-        <h2>Contato:</h2>
-        <p>(21)996693777</p>
-        <p>alexalves202008@gmail.com</p>
-        <p>Sofrendo todos os dias</p>
+    <footer id="ifoot">
+        <h2 id="ifooth2">Contato:</h2>
+        <p id="foot"> 
+            (21)996693777 <br><br>
+            alexalves202008@gmail.com <br><br>
+            Sofrendo todos os dias <br>
+        </p>
     </footer>
     <script>
+        // menu, abrir e fechar
         function homeMenu() {
             if (itens.style.display == "block") {
-                itens.style.display = 'none' 
+                itens.style.display = 'none';
             }
             else {
-                itens.style.display = 'block'
+                itens.style.display = 'block';
             }
         }
+        // footer no mobile
+        document.addEventListener('touchstart', e => {
+            if (e.target == ifoot || e.target == ifooth2 || e.target == foot) {
+                if (foot.style.display == "block") {
+                foot.style.display = "none";
+                }
+                else {
+                foot.style.display = "block";
+                }
+            }
+        })
     </script>
     
 </body>

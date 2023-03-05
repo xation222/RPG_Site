@@ -49,7 +49,11 @@ footer:hover {
     background-color: #e9dbc87d;
 }
 footer > p {
+    text-indent: 0;
     display: none;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
 }
 footer:hover > p {
     display: block;
@@ -104,13 +108,15 @@ i {
 i:hover {
     color: white;
     background-color: gray;
+    cursor: pointer;
 }
 menu {
-    padding: 0px;
+    padding: 0;
     display: none;
     background-color: #8a7b6677;
     border-radius: 7%;
     margin-top: 2px;
+    margin-bottom: 0;
 }
 nav {
     display: none;

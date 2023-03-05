@@ -1,0 +1,46 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            width: 100vw;
+            height: 100vh;
+        }
+        #circle {
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="circle"></div>
+    <script>
+    document.addEventListener('touchstart', e => {
+        circle.style.left = e.changedTouches[0].clientX - 25;
+        circle.style.top = e.changedTouches[0].clientY - 25;
+        console.log(e.changedTouches[0].clientX)
+    })
+    document.addEventListener('touchmove', e => {
+        circle.style.left = e.changedTouches[0].clientX - 25;
+        circle.style.top = e.changedTouches[0].clientY - 25;
+        console.log('move')
+    })
+    document.addEventListener('touchend', e => {
+        console.log('end')
+    })
+    /*document.addEventListener('mousemove', function(e) {   
+    let circle = document.getElementById('circle');
+    let left = e.pageX;
+    let top = e.pageY;
+    circle.style.left = left - 40  + 'px';
+    circle.style.top = top - 40 + 'px';
+    })*/
+    </script>
+</body>
+</html>
