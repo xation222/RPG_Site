@@ -1,0 +1,22 @@
+@charset "UTF-8";
+@media screen and (min-width: 768px) {
+    menu {
+        display: block;
+    }
+    i {
+        display: none;
+    }
+    li {
+        display: inline-block;
+    }
+    a {
+        display: inline-block;
+        padding: 8 20 8 20;
+    }
+    header {
+        margin: -10;
+    }
+    a:hover {
+        background-color: rgba(43, 226, 202, 0.256);
+    }
+}
