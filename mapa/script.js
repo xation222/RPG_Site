@@ -388,13 +388,13 @@
     })  
     document.addEventListener('touchstart', e => {
         device = true;
-        circle.style.left = e.changedTouches[0].clientX - 25;
-        circle.style.top = e.changedTouches[0].clientY - 25;
+        circle.style.left = e.changedTouches[0].clientX - 40;
+        circle.style.top = e.changedTouches[0].clientY - 40;
         console.log(e.changedTouches[0].clientX)
     })
     document.addEventListener('touchmove', e => {
-        circle.style.left = e.changedTouches[0].clientX - 25;
-        circle.style.top = e.changedTouches[0].clientY - 25;
+        circle.style.left = e.changedTouches[0].clientX - 40;
+        circle.style.top = e.changedTouches[0].clientY - 40;
         console.log('move')
     })
 
