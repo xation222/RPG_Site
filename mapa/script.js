@@ -142,6 +142,7 @@
     {
         objeto2texto.style.display = 'block';
         objeto2texto.style.left = pontos_ob2[0].x - this.getElementById('p2t').offsetWidth;
+        objeto2texto.style.top = pontos_ob2[3].y - this.getElementById('p2t').offsetHeight;
         objeto1.style.opacity = '100%';
     }
     else if (((pontos_ob2t[0].x <= pontos_ob1[1].x) 
@@ -165,6 +166,7 @@
     {
         objeto3texto.style.display = 'block';
         objeto3texto.style.left = pontos_ob3[0].x - this.getElementById('p3t').offsetWidth;
+        objeto3texto.style.top = pontos_ob3[3].y - this.getElementById('p3t').offsetHeight;
         objeto1.style.opacity = '100%';
     }
     else if (((pontos_ob3t[0].x <= pontos_ob1[1].x) 
@@ -259,6 +261,7 @@
     {
         objeto7texto.style.display = 'block';
         objeto7texto.style.left = pontos_ob7[1].x;
+        objeto7texto.style.top = pontos_ob7[1].y;
         objeto1.style.opacity = '100%';
     }
     else if (((pontos_ob7t[0].x <= pontos_ob1[1].x) 
