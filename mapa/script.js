@@ -469,6 +469,6 @@
             document.head.children[4].href = 'style.css'
         }
     })
-    console.log(document.body.clientWidth)
+
     
 
