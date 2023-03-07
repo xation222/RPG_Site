@@ -1,0 +1,15 @@
+@charset "UTF-8";
+@font-face {
+    font-family: lboy;
+    src: url(../fonts/SuperLegendBoy-4w8Y.ttf);
+}
+body {
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    background-image: linear-gradient(white, black);
+    font-family: 'Times New Roman', Times, serif;
+}
+main {
+    display: none;
+}

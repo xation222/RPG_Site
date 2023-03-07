@@ -1,13 +1,12 @@
         // variável de colisão, evita que mais de um box abra ao mesmo tempo
     var colisao = false
-        // esconder cursor do mouse
+        //esconder cursor do mouse
     document.body.style.cursor = 'none';  
-        
-    var device = false;
-    var circle = document.getElementById('circle')
         // movimento de seguir o mouse
+    var device = false;
     document.addEventListener('mousemove', function(e) {   
     if (device == false) {
+        var circle = document.getElementById('circle');
         let left = e.pageX;
         let top = e.pageY;
         circle.style.left = left - 40  + 'px';
@@ -141,10 +140,6 @@
     && (pontos_ob1[0].y <= pontos_ob2[2].y)
     && (colisao == false))
     {
-        if (document.body.clientWidth < 769)
-        {
-            colisao = true;
-        }
         objeto2texto.style.display = 'block';
         objeto2texto.style.left = pontos_ob2[0].x - this.getElementById('p2t').offsetWidth;
         objeto2texto.style.top = pontos_ob2[3].y - this.getElementById('p2t').offsetHeight;
@@ -153,8 +148,7 @@
     else if (((pontos_ob2t[0].x <= pontos_ob1[1].x) 
     && (pontos_ob1[0].x <= pontos_ob2t[1].x) 
     && (pontos_ob2t[0].y <= pontos_ob1[2].y) 
-    && (pontos_ob1[0].y <= pontos_ob2t[2].y)
-    && (document.body.clientWidth > 768))) 
+    && (pontos_ob1[0].y <= pontos_ob2t[2].y))) 
     {
         colisao = true;
         objeto2texto.style.display = 'block';
@@ -170,10 +164,6 @@
     && (pontos_ob1[0].y <= pontos_ob3[2].y)
     && (colisao == false))) 
     {
-        if (document.body.clientWidth < 769)
-        {
-            colisao = true;
-        }
         objeto3texto.style.display = 'block';
         objeto3texto.style.left = pontos_ob3[0].x - this.getElementById('p3t').offsetWidth;
         objeto3texto.style.top = pontos_ob3[3].y - this.getElementById('p3t').offsetHeight;
@@ -182,8 +172,7 @@
     else if (((pontos_ob3t[0].x <= pontos_ob1[1].x) 
     && (pontos_ob1[0].x <= pontos_ob3t[1].x) 
     && (pontos_ob3t[0].y <= pontos_ob1[2].y) 
-    && (pontos_ob1[0].y <= pontos_ob3t[2].y)
-    && (document.body.clientWidth > 768))) 
+    && (pontos_ob1[0].y <= pontos_ob3t[2].y))) 
     {
         colisao = true;
         objeto3texto.style.display = 'block';
@@ -199,10 +188,6 @@
     && (pontos_ob1[0].y <= pontos_ob4[2].y)
     && (colisao == false))) 
     {
-        if (document.body.clientWidth < 769)
-        {
-            colisao = true;
-        }
         objeto4texto.style.display = 'block';
         objeto4texto.style.left = pontos_ob4[0].x - this.getElementById('p4t').offsetWidth;
         objeto4texto.style.top = pontos_ob4[3].y - this.getElementById('p4t').offsetHeight
@@ -211,8 +196,7 @@
     else if (((pontos_ob4t[0].x <= pontos_ob1[1].x) 
     && (pontos_ob1[0].x <= pontos_ob4t[1].x) 
     && (pontos_ob4t[0].y <= pontos_ob1[2].y) 
-    && (pontos_ob1[0].y <= pontos_ob4t[2].y)
-    && (document.body.clientWidth > 768))) 
+    && (pontos_ob1[0].y <= pontos_ob4t[2].y))) 
     {
         colisao = true;
         objeto4texto.style.display = 'block';
@@ -228,10 +212,6 @@
     && (pontos_ob1[0].y <= pontos_ob5[2].y)
     && (colisao == false))) 
     {
-        if (document.body.clientWidth < 769)
-        {
-            colisao = true;
-        }
         objeto5texto.style.display = 'block';
         objeto5texto.style.left = pontos_ob5[0].x - this.getElementById('p5t').offsetWidth;
         objeto1.style.opacity = '100%';
@@ -239,8 +219,7 @@
     else if (((pontos_ob5t[0].x <= pontos_ob1[1].x) 
     && (pontos_ob1[0].x <= pontos_ob5t[1].x) 
     && (pontos_ob5t[0].y <= pontos_ob1[2].y) 
-    && (pontos_ob1[0].y <= pontos_ob5t[2].y)
-    && (document.body.clientWidth > 768))) 
+    && (pontos_ob1[0].y <= pontos_ob5t[2].y))) 
     {
         colisao = true;
         objeto5texto.style.display = 'block';
@@ -256,10 +235,6 @@
     && (pontos_ob1[0].y <= pontos_ob6[2].y)
     && (colisao == false))) 
     {
-        if (document.body.clientWidth < 769)
-        {
-            colisao = true;
-        }
         objeto6texto.style.display = 'block';
         objeto6texto.style.left = pontos_ob6[1].x;
         objeto6texto.style.top = pontos_ob6[2].y - this.getElementById('p6t').offsetHeight;
@@ -268,8 +243,7 @@
     else if (((pontos_ob6t[0].x <= pontos_ob1[1].x) 
     && (pontos_ob1[0].x <= pontos_ob6t[1].x) 
     && (pontos_ob6t[0].y <= pontos_ob1[2].y) 
-    && (pontos_ob1[0].y <= pontos_ob6t[2].y)
-    && (document.body.clientWidth > 768))) 
+    && (pontos_ob1[0].y <= pontos_ob6t[2].y))) 
     {
         colisao = true;
         objeto6texto.style.display = 'block';
@@ -285,10 +259,6 @@
     && (pontos_ob1[0].y <= pontos_ob7[2].y)
     && (colisao == false))) 
     {
-        if (document.body.clientWidth < 769)
-        {
-            colisao = true;
-        }
         objeto7texto.style.display = 'block';
         objeto7texto.style.left = pontos_ob7[1].x;
         objeto7texto.style.top = pontos_ob7[1].y;
@@ -297,8 +267,7 @@
     else if (((pontos_ob7t[0].x <= pontos_ob1[1].x) 
     && (pontos_ob1[0].x <= pontos_ob7t[1].x) 
     && (pontos_ob7t[0].y <= pontos_ob1[2].y) 
-    && (pontos_ob1[0].y <= pontos_ob7t[2].y)
-    && (document.body.clientWidth > 768))) 
+    && (pontos_ob1[0].y <= pontos_ob7t[2].y))) 
     {
         colisao = true;
         objeto7texto.style.display = 'block';
@@ -314,10 +283,6 @@
     && (pontos_ob1[0].y <= pontos_ob8[2].y)
     && (colisao == false))) 
     {
-        if (document.body.clientWidth < 769)
-        {
-            colisao = true;
-        }
         objeto8texto.style.display = 'block';
         objeto8texto.style.left = pontos_ob8[1].x;
         objeto8texto.style.top = pontos_ob8[2].y - this.getElementById('p8t').offsetHeight;
@@ -326,8 +291,7 @@
     else if (((pontos_ob8t[0].x <= pontos_ob1[1].x) 
     && (pontos_ob1[0].x <= pontos_ob8t[1].x) 
     && (pontos_ob8t[0].y <= pontos_ob1[2].y) 
-    && (pontos_ob1[0].y <= pontos_ob8t[2].y)
-    && (document.body.clientWidth > 768))) 
+    && (pontos_ob1[0].y <= pontos_ob8t[2].y))) 
     {
         colisao = true;
         objeto8texto.style.display = 'block';
@@ -343,10 +307,6 @@
     && (pontos_ob1[0].y <= pontos_ob9[2].y)
     && (colisao == false))) 
     {
-        if (document.body.clientWidth < 769)
-        {
-            colisao = true;
-        }
         objeto9texto.style.display = 'block';
         objeto9texto.style.left = pontos_ob9[1].x;
         objeto9texto.style.top = pontos_ob9[2].y - this.getElementById('p9t').offsetHeight;
@@ -355,8 +315,7 @@
     else if (((pontos_ob9t[0].x <= pontos_ob1[1].x) 
     && (pontos_ob1[0].x <= pontos_ob9t[1].x) 
     && (pontos_ob9t[0].y <= pontos_ob1[2].y) 
-    && (pontos_ob1[0].y <= pontos_ob9t[2].y)
-    && (document.body.clientWidth > 768))) 
+    && (pontos_ob1[0].y <= pontos_ob9t[2].y))) 
     {
         colisao = true;
         objeto9texto.style.display = 'block';
@@ -372,10 +331,6 @@
     && (pontos_ob1[0].y <= pontos_ob10[2].y)
     && (colisao == false))) 
     {   
-        if (document.body.clientWidth < 769)
-        {
-            colisao = true;
-        }
         objeto10texto.style.display = 'block';
         objeto10texto.style.left = pontos_ob10[1].x;
         objeto10texto.style.top = pontos_ob10[2].y - this.getElementById('p10t').offsetHeight;
@@ -384,8 +339,7 @@
     else if (((pontos_ob10t[0].x <= pontos_ob1[1].x) 
     && (pontos_ob1[0].x <= pontos_ob10t[1].x) 
     && (pontos_ob10t[0].y <= pontos_ob1[2].y) 
-    && (pontos_ob1[0].y <= pontos_ob10t[2].y)
-    && (document.body.clientWidth > 768)))
+    && (pontos_ob1[0].y <= pontos_ob10t[2].y)))
     {
         colisao = true;
         objeto10texto.style.display = 'block';
@@ -401,10 +355,6 @@
     && (pontos_ob1[0].y <= pontos_ob11[2].y)
     && (colisao == false))) 
     {
-        if (document.body.clientWidth < 769)
-        {
-            colisao = true;
-        }
         objeto11texto.style.display = 'block';
         objeto11texto.style.left = pontos_ob11[0].x - this.getElementById('p11t').offsetWidth;
         objeto1.style.opacity = '100%';
@@ -412,8 +362,7 @@
     else if (((pontos_ob11t[0].x <= pontos_ob1[1].x) 
     && (pontos_ob1[0].x <= pontos_ob11t[1].x) 
     && (pontos_ob11t[0].y <= pontos_ob1[2].y) 
-    && (pontos_ob1[0].y <= pontos_ob11t[2].y)
-    && (document.body.clientWidth > 768))) 
+    && (pontos_ob1[0].y <= pontos_ob11t[2].y))) 
     {   
         colisao = true;
         objeto11texto.style.display = 'block';
@@ -438,37 +387,19 @@
         objeto1.style.opacity = '80%';
         colisao = false;
     }
+    console.log(device)
     })  
     document.addEventListener('touchstart', e => {
         device = true;
-        circle.style.left = e.changedTouches[0].clientX - 20;
-        circle.style.top = e.changedTouches[0].clientY - 20;
+        circle.style.left = e.changedTouches[0].clientX - 40;
+        circle.style.top = e.changedTouches[0].clientY - 40;
+        console.log(e.changedTouches[0].clientX)
     })
     document.addEventListener('touchmove', e => {
-        circle.style.left = e.changedTouches[0].clientX - 20;
-        circle.style.top = e.changedTouches[0].clientY - 20;
+        circle.style.left = e.changedTouches[0].clientX - 40;
+        circle.style.top = e.changedTouches[0].clientY - 40;
+        console.log('move')
     })
-    // detecta orientação do dispositivo ao carregar a pagina e defini qual css carregar
-    const m = window.matchMedia("(orientation: portrait)").matches;
-    if (m) {
-        console.log("you are in portrait mode");
-        document.head.children[4].href = 'styleportrait.css';
-    } else {
-        console.log("you are in landscape mode")
-        document.head.children[4].href = 'style.css'
-    }
-    // detecta a mudança de orientação do dispositivo e troca o css
-    window.matchMedia("(orientation: portrait)").addEventListener("change", e => {
-        const portrait = e.matches;
-        
-        if (portrait) {
-            console.log("you are in portrait mode");
-            document.head.children[4].href = 'styleportrait.css';
-        } else {
-            console.log("you are in landscape mode")
-            document.head.children[4].href = 'style.css'
-        }
-    })
-    console.log(document.body.clientWidth)
-    
+
+
 
