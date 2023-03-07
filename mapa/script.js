@@ -441,12 +441,12 @@
     })  
     document.addEventListener('touchstart', e => {
         device = true;
-        circle.style.left = e.changedTouches[0].clientX - 20;
-        circle.style.top = e.changedTouches[0].clientY - 20;
+        circle.style.left = e.changedTouches[0].clientX - 50;
+        circle.style.top = e.changedTouches[0].clientY - 50;
     })
     document.addEventListener('touchmove', e => {
-        circle.style.left = e.changedTouches[0].clientX - 20;
-        circle.style.top = e.changedTouches[0].clientY - 20;
+        circle.style.left = e.changedTouches[0].clientX - 50;
+        circle.style.top = e.changedTouches[0].clientY - 50;
     })
     // detecta orientação do dispositivo ao carregar a pagina e defini qual css carregar
     const m = window.matchMedia("(orientation: portrait)").matches;
