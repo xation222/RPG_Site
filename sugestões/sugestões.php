@@ -11,7 +11,7 @@
     <?php 
         date_default_timezone_set("America/Sao_Paulo");
         $momento = date("d/M/Y G:i:s");
-        $entrada = $_POST["sugestões"];
+        $entrada = $_GET["sugestões"];
 
         $reg = fopen("sugestões.txt", "a");
         fwrite($reg, "\n$momento\n$entrada");
