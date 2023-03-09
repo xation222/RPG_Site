@@ -125,3 +125,8 @@ menu {
 nav {
     display: none;
 }
+footer a {
+    padding-left: 0;
+    margin-left: 0;
+    font-size: large;
+}
