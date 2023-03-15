@@ -9,13 +9,13 @@
 <body>
     <h1>Obrigado por nos ajudar!</h1>
     <?php 
-        date_default_timezone_set("America/Sao_Paulo");
-        $momento = date("d/M/Y G:i:s");
-        $entrada = $_GET["sugestões"];
+        date_default_timezone_set("America/Sao_Paulo");  // definindo fuso horario de SP
+        $momento = date("d/M/Y G:i:s"); // criando uma variavel com a data e a hora
+        $entrada = $_REQUEST["sugestões"]; // capturando dados e colocando uma variável 
 
-        $reg = fopen("sugestões.txt", "a");
-        fwrite($reg, "\n$momento\n$entrada");
-        fclose($reg);
+        $reg = fopen("sugestões.txt", "a"); // criando uma variavel de abertura de arquivo, no modo 'a', que apenas adiona sem sobescrever
+        fwrite($reg, "\n$momento\n$entrada"); // comando de escrever no arquivo o texto indicado
+        fclose($reg); // fechando arquivo
     ?>
 </body>
 </html>
