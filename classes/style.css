@@ -33,15 +33,59 @@ menu li {
 menu ul {
     padding-left: 0;
 }
-menu li:hover {
-    background-color: rgba(170, 202, 202, 0.625);
-}
 article {
     height: 250px;
     margin: 5px;
     border-radius: 10%;
     background-color: rgba(0, 255, 255, 0.335);
     box-shadow: 1px 1px 1px black;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 75%;
+    font-weight: bolder
+}
+article:hover {
+    opacity: 100%;
+}
+#alivro {
+    background-image: url(../imagens/livro.png);
+    color: aqua;
+}
+#acajado {
+    background-image: url(../imagens/cajado.png);
+    color: rgb(0, 79, 175);
+}
+#aorb {
+    background-image: url(../imagens/orb.png);
+    color: rgb(6, 0, 42);
+}
+#construtor {
+    background-image: url(../imagens/contrutor.png);
+    color: rgb(110, 204, 255);
+}
+#treinador {
+    background-image: url(../imagens/treinador.png);
+    color: rgb(0, 0, 0);
+}
+#assassino {
+    background-image: url(../imagens/assassino.png);
+    color: #ffa9a9;
+}
+#lutador {
+    background-image: url(../imagens/lutador.jpg);
+    color: #ffa9a9;
+}
+#atirador {
+    background-image: url(../imagens/atirador.png);
+    color: #d1ffd6;
+}
+#espadachim {
+    background-image: url(../imagens/espadachim.jpg);
+    color: #ffa9a9;
+}
+#guardião {
+    background-image: url(../imagens/guardião.png);
+    color: #ffa9a9;
 }
 .wrapper {
     text-align: center;

@@ -25,7 +25,6 @@
                 <li><a href="raças/index.html">Raças</a></li>
                 <li><a href="classes/index.html">Classes</a></li>
                 <li><a href="personagens/index.html">Personagens</a></li>
-                <li><a href="sugestoes/index.html">Sugestões</a></li>
             </ul>
         </menu>
         <nav>
@@ -46,11 +45,18 @@
         <h2 id="ifooth2">Contato:</h2>
         <p id="foot"> 
             (21)996693777 <br><br>
-            alexalves202008@gmail.com <br><br>
-            Sofrendo todos os dias <br><br>
+            alexalves202008@gmail.com
         </p>
     </footer>
     <script>
+        function isTouch() {
+            return 'ontouchstart' in window || navigator.maxTouchPoints;
+        }
+        if (isTouch()){
+            console.log('touch')
+        } else {
+            console.log('mouse')
+        }
         // menu, abrir e fechar
         function homeMenu() {
             if (itens.style.display == "block") {
@@ -68,6 +74,10 @@
                 }
                 else {
                 foot.style.display = "block";
+                window.scrollTo({
+                    top: '500',
+                    behavior: 'smooth'
+                })
                 }
             }
         })

@@ -42,6 +42,49 @@ article {
     border-radius: 10%;
     background-color: rgba(40, 101, 101, 0.335);
     box-shadow: 1px 1px 1px black;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-weight: bolder;
+    opacity: 75%;
+}
+article:hover {
+    opacity: 100%;
+}
+#humano {
+    background-image: url(../imagens/humano.png);
+    color: white;
+}
+#tritão {
+    background-image: url(../imagens/tritão.png);
+    color: rgb(135, 135, 255);
+}
+#elfo {
+    background-image: url(../imagens/elfo.png);
+    color: darkslategray;
+}
+#orc {
+    background-image: url(../imagens/orc.png);
+    color: rgb(190, 255, 233);
+}
+#morcego {
+    background-image: url(../imagens/morcego.png);
+    color: rgb(247, 181, 66);
+}
+#harpia {
+    background-image: url(../imagens/harpia.png);
+    color: rgb(0, 0, 0);
+}
+#engravatado {
+    background-image: url(../imagens/Engravatado.png);
+    color: darkmagenta;
+}
+#inseto {
+    background-image: url(../imagens/inseto.png);
+    color: darkslateblue;
+}
+#ex {
+    background-image: url(../imagens/ex-receptaculo.png);
+    color: rgb(208, 255, 255);
 }
 .wrapper {
     text-align: center;
@@ -58,7 +101,11 @@ footer {
     box-shadow: 1px 1px 1px black;
     padding-top: 0;
     padding-left: 20;
-    height: 160;
+    height: 130;
+    color: rgb(121, 123, 123);
+}
+footer h2 {
+    padding-top: 8;
 }
 a {
     color: rgb(136, 51, 11);
