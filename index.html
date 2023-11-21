@@ -3,84 +3,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RPG Site</title>
+    <title>RPG - O Desejo</title>
     <link rel="shortcut icon" href="imagens/rpg.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css" media="all">
     <link rel="stylesheet" href="stylerest.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
     <header>
-        <h1 id="principal">RPG - O Desejo</h1>
-        
-        <i id="menuh" onclick="homeMenu()"><span class="material-symbols-outlined">
-            menu
-        </span></i>
-        
-        <menu id="itens">
-            <ul>
-                <li><a href="história/index.html">História</a></li>
-                <li><a href="mapa/index.html">Mapa</a></li>
-                <li><a href="regras/index.html">Regras</a></li>
-                <li><a href="raças/index.html">Raças</a></li>
-                <li><a href="classes/index.html">Classes</a></li>
-                <li><a href="personagens/index.html">Personagens</a></li>
-            </ul>
-        </menu>
-        <nav>
-            <a href="história/index.html">História</a>
-            <a href="mapa/index.html">Mapa</a>
-            <a href="regras/index.html">Regras</a>
-            <a href="raças/index.html">Raças</a>
-            <a href="classes/index.html">Classes</a>
-            <a href="personagens/index.html">Personagens</a>
+        <h1>RPG - O Desejo</h1>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="nav-mobile">
+            <div class="container-fluid">
+            <label for="menu-botao">Menu</label>
+             
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" id="menu-botao">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Início</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="história/index.html">História</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="mapa/index.html">Mapa</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Criação de Personagens
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="raças/index.html">Raças</a></li>
+                      <li><a class="dropdown-item" href="classes/index.html">Classes</a></li>
+                      <li><a class="dropdown-item" href="personagens/index.html">Personagens</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
         </nav>
+        <div id="nav-pc">
+            <a class="linknav" href="história/index.html">História</a>
+            <a class="linknav" href="mapa/index.html">Mapa</a>
+            <a class="linknav" href="regras/index.html">Regras</a>
+            <a class="linknav" href="raças/index.html">Raças</a>
+            <a class="linknav" href="classes/index.html">Classes</a>
+            <a class="linknav" href="personagens/index.html">Personagens</a>
+        </div>
     </header>
     <main>
-        <h1>O que é?</h1>
+        <h2>O que é?</h2>
         <p>Rpg - O desejo é um jogo de roleplay que se passa em diferentes épocas. Cada época é adaptada para a experiências dos players com rpg. A primeira tempora tem poucas regras e poucas possíbilidades a serem escolhidas na criação de persoangens. A segunda já adiciona as classes, melhorando assim as mecânicas de combate. A terceira temporada acrescenta as raças e outras regras e curiosidades. E por último a quarta temporada adiciona o restante das regras, se tornando um rpg por inteiro.</p>
         <p>Então se você nunca se quer jogou rpg antes nem mestrou, a primeira temporada seria a mais adequada. Se você já jogou Rpg antes, talvez a terceira ou a quarta. Caso queira criar a história do começo, a primeira pode ser adaptada as suas necessidades.</p>
     </main>
     <footer id="ifoot">
         <h2 id="ifooth2">Contato:</h2>
         <p id="foot"> 
-            (21)996693777 <br><br>
+            (21)996693777 <br>
             alexalves202008@gmail.com
         </p>
     </footer>
-    <script>
-        function isTouch() {
-            return 'ontouchstart' in window || navigator.maxTouchPoints;
-        }
-        if (isTouch()){
-            console.log('touch')
-        } else {
-            console.log('mouse')
-        }
-        // menu, abrir e fechar
-        function homeMenu() {
-            if (itens.style.display == "block") {
-                itens.style.display = 'none';
-            }
-            else {
-                itens.style.display = 'block';
-            }
-        }
-        // footer no mobile
-        document.addEventListener('touchstart', e => {
-            if (e.target == ifoot || e.target == ifooth2 || e.target == foot) {
-                if (foot.style.display == "block") {
-                foot.style.display = "none";
-                }
-                else {
-                foot.style.display = "block";
-                window.scrollTo({
-                    top: '500',
-                    behavior: 'smooth'
-                })
-                }
-            }
-        })
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
     </script>
 </body>
 </html>

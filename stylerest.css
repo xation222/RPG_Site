@@ -1,25 +1,133 @@
 @charset "UTF-8";
-
-@media screen and (min-width: 769px) {
-menu {
-    display: none;
-}    
-i {
-    display: none;
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css');
+@font-face {
+    font-family: f1;
+    src: url(fonts/MINECRAFT\ PE.ttf);
 }
-nav {
-    display: block;
+@font-face {
+    font-family: f2;
+    src: url(fonts/Melted\ Monster.ttf);
 }
-a {
-    display: inline;
+@font-face {
+    font-family: f3;
+    src: url(fonts/SuperLegendBoy-4w8Y.ttf);
+}
+@font-face {
+    font-family: f4;
+    src: url(fonts/PixeloidSansBold-GOjpP.ttf);
+}
+@font-face {
+    font-family: f5;
+    src: url(fonts/edosz.ttf);
+}
+:root {
+    --color0: rgb(255, 237, 236);
+    --color1: #C24E4A;
+    --color2: #8F0400;
+    --color3: #F5332C;
+    --color4: #614C4C;
+    --color5: #383737;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(var(--color0) 0%, var(--color0) 50%, var(--color4) 90%, var(--color5) 120%);
+    height: 100vh;
+    overflow-x: hidden;
 }
 h1 {
-    font-size: 1.8em;
+    padding: 40px;
+    font-family: f4;
+    font-size: 50px;
+    text-indent: 0px;
+    text-align: center;
 }
 h2 {
-    font-size: 1.5em;
+    font-size: 30px;
+    font-weight: bold;
+    text-indent: 0px;
 }
-p {
-    font-size: 1.1em;
+#nav-pc {
+    display: none;
 }
+#nav-mobile {
+    padding: 0;
+}
+.container-fluid {
+    background-color: var(--color1);
+    padding: 0;
+}
+.container-fluid > label {
+    padding-left: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+main, footer {
+    padding: 20px;
+}
+#ifoot {
+    background-color: black;
+    color: var(--color0);
+}
+li {
+    padding-left: 20px;
+}
+li:hover {
+    background-color: var(--color3);
+}
+label {
+    width: 82%;
+    height: 40px;
+}
+@media (min-width: 768px) {
+    #nav-pc {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #C24E4A;
+    }
+    #nav-mobile {
+        display: none;
+    }
+    .linknav {
+        text-decoration: none;
+        color: #383737;
+        font-size: 23px;
+        margin: 6px 0px;
+    }
+    .linknav:hover {
+        color: var(--color0)
+    }
+    h1 {
+        padding: 50px 40px;
+        font-size: 60px;
+    }
+    h2 {
+        font-size: 36px;
+    }
+    p {
+        font-size: 20px;
+    }
+    main, footer {
+        padding: 20px 40px;
+    }
+}
+@media (min-width: 1023px) {
+    h1 {
+        padding: 50px 40px;
+        font-size: 70px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 26px;
+    }
+    main, footer {
+        padding: 20px 46px;
+    }
+    .linknav {
+        text-decoration: none;
+        font-size: 32px;
+        margin: 10px 0px;
+    }
 }
