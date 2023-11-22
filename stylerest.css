@@ -20,6 +20,10 @@
     font-family: f5;
     src: url(fonts/edosz.ttf);
 }
+@font-face {
+    font-family: f6;
+    src: url(fonts/Rubik-VariableFont_wght.ttf);
+}
 :root {
     --color0: rgb(255, 237, 236);
     --color1: #C24E4A;
@@ -47,6 +51,12 @@ h2 {
     font-weight: bold;
     text-indent: 0px;
 }
+p {
+    font-family: f6;
+    letter-spacing: 1.5px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
 #nav-pc {
     display: none;
 }
@@ -65,8 +75,8 @@ h2 {
 main, footer {
     padding: 20px;
 }
-#ifoot {
-    background-color: black;
+footer {
+    background-color: #00000050;
     color: var(--color0);
 }
 li {
@@ -78,6 +88,12 @@ li:hover {
 label {
     width: 82%;
     height: 40px;
+}
+.dropdown-menu {
+    background-color: var(--color3);
+}
+.dropdown-menu > li > a:hover {
+    background-color: var(--color1);
 }
 @media (min-width: 768px) {
     #nav-pc {

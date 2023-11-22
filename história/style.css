@@ -1,106 +1,77 @@
 @charset "UTF-8";
-@font-face {
-    font-family: lboy;
-    src: url(../fonts/SuperLegendBoy-4w8Y.ttf);
-}
-@font-face {
-    font-family: monster;
-    src: url(../fonts/Melted\ Monster.ttf);
-}
-@font-face {
-    font-family: mine;
-    src: url(../fonts/MINECRAFT\ PE.ttf);
-}
-@font-face {
-    font-family: edotensei;
-    src: url(../fonts/edosz.ttf);
-}
-@font-face {
-    font-family: sanba;
-    src: url(../fonts/PixeloidSansBold-GOjpP.ttf);
-}
+@import url(../stylerest.css);
+
 html, body {
-    text-align: justify;
-    width: 100vw;
-    height: fit-content;
-    margin: 0;
-    padding: 0;
     background-image: radial-gradient(brown, rgb(21, 16, 1));
     background-size: 100% contain;
     background-repeat: no-repeat;
 }
-header {
-    text-align: center;
+h1 {
+    color: var(--color0);
+    text-shadow: 0 0 10px var(--color3);
 }
-menu {
-    display: none;
-    padding: inherit;
-}
-menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-li:hover {
-    background-color: brown;
-}
-a {
-    text-decoration: none;
-    color: brown;
-    text-shadow: 1px 1px 1px black;
-}
-a:hover {
-    color: rgb(254, 235, 235);
-}
-i:hover {
-    cursor: pointer;
-    color: rgb(254, 235, 235);
-}
-div#menu:hover {
-    background-color: rgba(181, 67, 67, 0.194);
-}
-#Temporada\ 1 h2 {
-    font-family: mine;
-    font-weight: bolder;
+.conteudo {
+    background-color: #55555550;
+    padding: 20px;
 }
 #Temporada\ 1 {
-    color: rgba(255, 227, 227, 0.828);
+    color: rgba(255, 227, 227, 0.8);
 }
 #Temporada\ 2 {
-    color: rgb(42, 0, 0);
+    color: rgb(255, 100, 120);
 }
 #Temporada\ 3 {
-    color: rgba(210, 143, 61, 0.761);
+    color: rgba(200, 150, 100);
 }
 #Temporada\ 4 {
-    color: rgba(236, 146, 197, 0.67);
+    color: rgba(236, 146, 197);
+}
+#Temporada\ 1 h2 {
+    font-family: f1;
+    font-weight: bolder;
+    text-shadow: 0 0 10px;
 }
 #Temporada\ 2 h2 {
-    font-family: monster;
+    font-family: f2;
     font-weight: bolder;
-    font-size: 32px;
+    font-size: 38px;
+    text-shadow: 5px 5px 3px black;
 }
 #Temporada\ 3 h2 {
-    font-family: lboy;
+    font-family: f3;
     font-weight: bolder;
-    font-size: 21px;
+    font-size: 26px;
+    text-shadow: -1px -3px 2px var(--color0);
+
 }
 #Temporada\ 4 h2 {
-    font-family: edotensei;
+    height: 50px;
+    font-family: f5;
     font-weight: bolder;
-    font-size: 31px;
+    font-size: 40px;
+    animation: 15s t4font infinite;
+}
+@keyframes t4font {
+    0% {
+        font-family: f3;
+        text-shadow: -1px -3px 2px var(--color0);
+    }
+    30%, 59% {
+        font-family: f1;
+        text-shadow: 0 0 10px;
+    }
+    60%, 89% {
+        font-family: f2;
+        text-shadow: 5px 5px 3px black;
+    }
+    90%, 100% {
+        font-family: f3;
+        text-shadow: -1px -3px 2px var(--color0);
+    }
+
 }
 .spoiler {
     display: none;
-}
-h2 {
-    text-indent: 20px;
-}
-p {
-    font-size: 14px;
-    text-indent: 20px;
-    text-justify: inter-word;
-    hyphens: auto;
 }
 .spoiler_link {
     cursor: pointer;
@@ -109,20 +80,4 @@ p {
 }
 .spoiler_link:hover {
     color: red;
-}
-article {
-    background-color: rgba(19, 101, 112, 0.071);
-    margin-left: 2%;
-    margin-right: 2%;
-    padding-left: 5%;
-    padding-top: 1px;
-    padding-bottom: 20px;
-    padding-right: 5%;
-    margin-bottom: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-}
-footer {
-    color: rgb(114, 114, 114);
-    margin-left: 30px;
 }
